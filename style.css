@@ -1,0 +1,32 @@
+.gallery {
+    list-style: none;
+    padding: 0px;
+}
+
+.gallery-item:not(:last-child){
+    margin-bottom: 100px;
+}
+
+.gallery img{
+    width: 640px;
+    height: 480px;
+    transform: translateX(-105%);
+    object-fit: cover;
+    transition: all 1s linear 500ms;
+    opacity: 0;
+}
+
+img { 
+    display: block;
+    background-color: #f0f0f0;
+};
+
+.img {
+    width: 800px;
+}
+
+.gallery img.move{
+    transform: translateX(65%);
+    opacity: 1;
+    
+}
