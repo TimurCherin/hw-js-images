@@ -7,26 +7,19 @@
     margin-bottom: 100px;
 }
 
-.gallery img{
+.img{
     width: 640px;
     height: 480px;
-    transform: translateX(-105%);
+    transform: scale(0.5) translateX(-105%);
+    display: block;
+    background-color: #f0f0f0;
     object-fit: cover;
     transition: all 1s linear 500ms;
     opacity: 0;
 }
 
-img { 
-    display: block;
-    background-color: #f0f0f0;
-};
-
-.img {
-    width: 800px;
-}
-
-.gallery img.move{
-    transform: translateX(65%);
+.move{
+    transform: scale(1) translateX(65%);
     opacity: 1;
     
 }
